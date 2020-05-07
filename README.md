@@ -122,7 +122,6 @@ Q:
 
 Left Rectified | Right Rectified
 ------------ | -------------
-Left Optical  | Right Optical 
 ![cell 1](https://github.com/dparksports/calibrate-stereo/blob/master/cmake-build-debug/left02.jpg) | ![cell 2](https://github.com/dparksports/calibrate-stereo/blob/master/cmake-build-debug/right02.jpg)
 
 ![cell 3](https://github.com/dparksports/calibrate-stereo/blob/master/stereo-calib-1-rectified.jpg)
