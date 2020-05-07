@@ -9,8 +9,9 @@ output files:
 extrinsics.yml
 intrinsics.yml
 
-stereo_calib.xml:
+
 ```xml
+stereo_calib.xml:
 ---
 <?xml version="1.0"?>
 <opencv_storage>
