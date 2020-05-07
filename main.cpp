@@ -299,10 +299,11 @@ StereoCalib(const vector<string>& imagelist, Size boardSize, float squareSize, b
         string suffix = "stereo-calib";
         string combinedPath = "../stereo-calib-" + to_string(i) + "-rectified.jpg";
         cv::imwrite(combinedPath, canvas);
-//        imshow("rectified", canvas);
-//        char c = (char)waitKey();
-//        if( c == 27 || c == 'q' || c == 'Q' )
-//            break;
+
+        imshow("rectified", canvas);
+        char c = (char)waitKey();
+        if( c == 27 || c == 'q' || c == 'Q' )
+            break;
     }
 }
 
@@ -349,5 +350,5 @@ int main(int argc, char** argv)
     }
 
     StereoCalib(imagelist, boardSize, squareSize, false, true, showRectified);
-    return 0;
+     return 0;
 }
