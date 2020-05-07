@@ -1,16 +1,3 @@
-/* This is sample from the OpenCV book. The copyright notice is below */
-
-/* *************** License:**************************
-   Oct. 3, 2008
-   Right to use this code in any way you want without warranty, support or any guarantee of it working.
-
-   BOOK: It would be nice if you cited it:
-   Learning OpenCV: Computer Vision with the OpenCV Library
-     by Gary Bradski and Adrian Kaehler
-     Published by O'Reilly Media, October 3, 2008
-
-   ************************************************** */
-
 #include "opencv2/calib3d.hpp"
 #include "opencv2/imgcodecs.hpp"
 #include "opencv2/highgui.hpp"
@@ -308,10 +295,14 @@ StereoCalib(const vector<string>& imagelist, Size boardSize, float squareSize, b
         else
             for( j = 0; j < canvas.cols; j += 16 )
                 line(canvas, Point(j, 0), Point(j, canvas.rows), Scalar(0, 255, 0), 1, 8);
-        imshow("rectified", canvas);
-        char c = (char)waitKey();
-        if( c == 27 || c == 'q' || c == 'Q' )
-            break;
+
+        string suffix = "stereo-calib";
+        string combinedPath = "../stereo-calib-" + to_string(i) + "-rectified.jpg";
+        cv::imwrite(combinedPath, canvas);
+//        imshow("rectified", canvas);
+//        char c = (char)waitKey();
+//        if( c == 27 || c == 'q' || c == 'Q' )
+//            break;
     }
 }
 
