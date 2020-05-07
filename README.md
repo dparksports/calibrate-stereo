@@ -3,7 +3,7 @@
 input files:
 - right[1..14].jpg
 - left[1..14].jpg
-- ereo_calib.xml
+- stereo_calib.xml
 
 output files:
 - intrinsics.yml
