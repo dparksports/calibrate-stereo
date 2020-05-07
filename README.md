@@ -6,8 +6,8 @@ input files:
 - ereo_calib.xml
 
 output files:
-- trinsics.yml
-- trinsics.yml
+- intrinsics.yml
+- extrinsics.yml
 
 
 ```xml
