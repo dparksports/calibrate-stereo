@@ -1,5 +1,27 @@
 # calibrate-stereo
 
+For each observed point coordinate (u,v) the function computes:
+
+x′′←(u−cx)/fx
+
+y′′←(v−cy)/fy
+
+(x′,y′)=undistort(x′′,y′′,distCoeffs)
+
+[XYW]T←R∗[x′y′1]T
+
+x←X/W
+y←Y/W
+
+only performed if P is specified:
+
+u′←xf′x+c′x
+
+v′←yf′y+c′y
+
+where undistort is an approximate iterative algorithm that estimates the normalized original point coordinates out of the normalized distorted point coordinates ("normalized" means that the coordinates do not depend on the camera matrix).
+
+
 input files:
 - right[1..14].jpg
 - left[1..14].jpg
