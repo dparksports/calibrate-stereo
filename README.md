@@ -142,8 +142,9 @@ Q:
 
 
 
-Left Rectified | Right Rectified
+Orthogonal | Screenshot
 ------------ | -------------
-![cell 1](https://github.com/dparksports/calibrate-stereo/blob/master/cmake-build-debug/left02.jpg) | ![cell 2](https://github.com/dparksports/calibrate-stereo/blob/master/cmake-build-debug/right02.jpg)
 
-![cell 3](https://github.com/dparksports/calibrate-stereo/blob/master/stereo-calib-1-rectified.jpg)
+![screenshot](https://github.com/dparksports/inverse-projection/blob/master/pointcloud.png) |
+![screenshot](https://github.com/dparksports/inverse-projection/blob/master/pointcloud.png)
+
